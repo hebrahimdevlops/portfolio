@@ -137,9 +137,6 @@ a {
   margin: 20px;
   transition: 0.3s;
 }
-.child:hover {
-  transform: rotate(-3.5deg);
-}
 
 .child h2 {
   color: var(--green);
@@ -352,7 +349,138 @@ h3 {
   color: #ffffff;
   margin-top: 5rem;
 }
-@media screen and (max-width: 688px) {
+
+@media screen and (max-width: 420px) {
+  #credentials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0 0 0;
+    padding-top: 50px;
+  }
+
+  .child {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: auto;
+    width: 318px;
+    margin: 30px 20px 30px 20px;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #c6d1c9;
+    justify-content: center;
+    margin: 20px;
+    transition: 0.25s;
+  }
+
+  .project-child img {
+    width: 280px;
+    height: 200px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  #projects {
+    background-color: #a1b3af;
+    padding-top: 5.5rem;
+    margin-bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    scroll-behavior: smooth;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 20px;
+  }
+  .project-child {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    flex: 100%;
+
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    transition: transform 1s;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    width: 100vw;
+
+    position: fixed;
+    background-color: #9bbeb8;
+    z-index: 10;
+  }
+  a {
+    text-decoration: none;
+    color: #3e4c49;
+    font-size: 0.92rem;
+    padding: 10px;
+  }
+  #welcome-section {
+    width: auto;
+    height: auto;
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    margin: auto;
+    padding-top: 6.5rem;
+  }
+  .name {
+    padding-bottom: 2rem;
+  }
+  .naration {
+    overflow: hidden;
+  }
+  .naration {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #profile_photo {
+    border-radius: 50%;
+    max-width: 50%;
+    min-width: 20%;
+    height: auto;
+  }
+  #welcome-section h1 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 688px) {
   #welcome-section {
     width: auto;
     height: auto;
@@ -413,7 +541,7 @@ h3 {
   }
   .project-child img {
     width: 400px;
-    height: 300px;
+    height: 200px;
     margin: auto;
     border-radius: 10px;
     justify-content: center;
@@ -445,9 +573,7 @@ h3 {
     margin: 20px;
     transition: 0.25s;
   }
-  .child:hover {
-    transform: rotate(3.5deg);
-  }
+
   #projects {
     background-color: #a1b3af;
     padding-top: 5.5rem;
@@ -481,7 +607,7 @@ h3 {
     transition: transform 1s;
   }
   .title {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
