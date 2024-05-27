@@ -14,7 +14,7 @@
 #navbar {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   text-decoration: none;
   width: 100vw;
   height: 10vh;
@@ -26,13 +26,18 @@
 .nav-list {
   display: flex;
   flex-direction: row;
-  margin-left: 5px;
+  width: 100%;
 }
 .nav-list li {
   display: flex;
+  flex: 35%;
+  width: 20px;
+  margin-left: 60px;
   list-style: none;
   align-items: center;
-
+  justify-content: flex-end;
+  position: relative;
+  right: 2.5rem;
   height: 10vh;
 }
 a:hover {
@@ -48,7 +53,7 @@ a {
   text-decoration: none;
   color: #3e4c49;
   font-size: 1.5rem;
-  padding: 10px;
+  padding: 10px 10px 10px 2px;
 }
 
 #welcome-section {
@@ -75,9 +80,10 @@ a {
 }
 
 #profile_photo {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border: 4px solid white;
+  margin: 0 0 0 20px;
 }
 
 .welcome-profile p {
@@ -98,6 +104,7 @@ a {
   margin-right: 100px;
   position: relative;
   left: 50px;
+  overflow: hidden;
 }
 
 .naration p {
@@ -435,6 +442,21 @@ h3 {
     background-color: #9bbeb8;
     z-index: 10;
   }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .nav-list li {
+    display: flex;
+    flex: 25%;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 10vh;
+  }
   a {
     text-decoration: none;
     color: #3e4c49;
@@ -456,9 +478,7 @@ h3 {
   .name {
     padding-bottom: 2rem;
   }
-  .naration {
-    overflow: hidden;
-  }
+
   .naration {
     color: white;
     text-align: center;
@@ -467,6 +487,7 @@ h3 {
     width: 80%;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
 
   #profile_photo {
@@ -709,5 +730,36 @@ h3 {
     margin: auto;
     border-radius: 10px;
     justify-content: center;
+  }
+  .child h2 {
+    color: var(--green);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 0 0 20px 0;
+  }
+}
+@media screen and (min-width: 920px) {
+  #profile_photo {
+    width: 318.38px;
+    height: auto;
+    border: 4px solid white;
+    margin: 0 0 0 20px;
+  }
+  .child h2 {
+    color: var(--green);
+    font-size: 1.8rem;
+    margin-top: 20px;
+    padding: 0 0 20px 0;
+  }
+  .naration p {
+    text-align: left;
+    font-size: 1.45rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  main {
+    width: 1280px;
+    height: auto;
+    padding: 0 100px 0 100px;
   }
 }
