@@ -121,6 +121,7 @@ a {
   align-items: center;
   margin: 40px 0 0 0;
   padding-top: 50px;
+  overflow: hidden;
 }
 .child {
   display: flex;
@@ -136,6 +137,7 @@ a {
   justify-content: center;
   margin: 20px;
   transition: 0.3s;
+  overflow: hidden;
 }
 
 .child h2 {
@@ -143,6 +145,7 @@ a {
   font-size: 1rem;
   margin-top: 20px;
   padding: 0 0 20px 0;
+  overflow: hidden;
 }
 
 .info {
@@ -157,6 +160,7 @@ a {
   padding-bottom: 20px;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 .info ul {
   margin: 0;
