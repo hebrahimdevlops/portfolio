@@ -10,11 +10,16 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
+ {
+  display: flex;
+  justify-content: center;
+  align-item: center;
+}
 
 #navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   text-decoration: none;
   width: 100vw;
   height: 10vh;
@@ -26,18 +31,15 @@
 .nav-list {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  margin-left: 5px;
+  position: relative;
+  right: 40px;
 }
 .nav-list li {
   display: flex;
-  flex: 35%;
-  width: 20px;
-  margin-left: 60px;
   list-style: none;
   align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  right: 2.5rem;
+
   height: 10vh;
 }
 a:hover {
@@ -53,7 +55,7 @@ a {
   text-decoration: none;
   color: #3e4c49;
   font-size: 1.5rem;
-  padding: 10px 10px 10px 2px;
+  padding: 10px;
 }
 
 #welcome-section {
@@ -100,11 +102,10 @@ a {
   flex-direction: column;
   flex: 60%;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   margin-right: 100px;
   position: relative;
   left: 50px;
-  overflow: hidden;
 }
 
 .naration p {
@@ -127,7 +128,7 @@ a {
   justify-content: space-around;
   align-items: center;
   margin: 40px 0 0 0;
-  padding-top: 50px;
+  padding-top: 150px;
   overflow: hidden;
 }
 .child {
@@ -211,7 +212,7 @@ h3 {
 
 #projects {
   background-color: #a1b3af;
-  padding-top: 5.5rem;
+  padding-top: 8.5rem;
 
   display: flex;
   flex-direction: column;
@@ -368,8 +369,8 @@ h3 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 40px 0 0 0;
-    padding-top: 80px;
+    margin: 20px 0 0 0;
+    padding-top: 100px;
   }
 
   .child {
@@ -385,7 +386,6 @@ h3 {
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     background-color: #c6d1c9;
     justify-content: center;
-    margin: 20px;
     transition: 0.25s;
   }
 
@@ -397,7 +397,7 @@ h3 {
   }
   #projects {
     background-color: #a1b3af;
-    padding-top: 5.5rem;
+    padding-top: 7.5rem;
     margin-bottom: 0;
 
     display: flex;
@@ -442,21 +442,6 @@ h3 {
     background-color: #9bbeb8;
     z-index: 10;
   }
-
-  .nav-list {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  .nav-list li {
-    display: flex;
-    flex: 25%;
-    list-style: none;
-    align-items: center;
-    justify-content: flex-end;
-
-    height: 10vh;
-  }
   a {
     text-decoration: none;
     color: #3e4c49;
@@ -473,7 +458,7 @@ h3 {
     flex: 1;
     justify-content: center;
     margin: auto;
-    padding-top: 6.5rem;
+    padding-top: 7.5rem;
   }
   .name {
     padding-bottom: 2rem;
@@ -516,7 +501,7 @@ h3 {
     flex: 1;
     justify-content: center;
     margin: auto;
-    padding-top: 6.5rem;
+    padding-top: 7.5rem;
   }
   .name {
     padding-bottom: 2rem;
@@ -579,7 +564,7 @@ h3 {
     justify-content: space-around;
     align-items: center;
     margin: 40px 0 0 0;
-    padding-top: 50px;
+    padding-top: 120px;
   }
 
   .child {
@@ -601,7 +586,7 @@ h3 {
 
   #projects {
     background-color: #a1b3af;
-    padding-top: 5.5rem;
+    padding-top: 7.5rem;
     margin-bottom: 0;
 
     display: flex;
@@ -645,7 +630,7 @@ h3 {
     justify-content: space-around;
     align-items: center;
     margin: 40px 0 0 0;
-    padding-top: 50px;
+    padding-top: 120px;
   }
 
   .child {
@@ -751,15 +736,23 @@ h3 {
     margin-top: 20px;
     padding: 0 0 20px 0;
   }
+
   .naration p {
     text-align: left;
     font-size: 1.45rem;
   }
+  .title {
+    font-size: 3rem;
+  }
 }
-@media screen and (min-width: 1280px) {
-  main {
-    width: 1280px;
+@media screen and (min-width: 1282px) {
+  .naration p {
+    max-width: 1280px;
     height: auto;
-    padding: 0 100px 0 100px;
+    text-align: left;
+    font-size: 1.75rem;
+  }
+  .title {
+    font-size: 4rem;
   }
 }
