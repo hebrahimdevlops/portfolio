@@ -10,11 +10,6 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
- {
-  display: flex;
-  justify-content: center;
-  align-item: center;
-}
 
 #navbar {
   display: flex;
@@ -746,8 +741,8 @@ h3 {
   }
 }
 @media screen and (min-width: 1282px) {
-  .naration p {
-    max-width: 1280px;
+  .naration {
+    width: 652px;
     height: auto;
     text-align: left;
     font-size: 1.75rem;
