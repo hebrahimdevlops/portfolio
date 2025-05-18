@@ -257,104 +257,55 @@ h3 {
 
 #contact {
   padding-top: 10px;
-  background-color: var(--green);
+  border: 4px solid var(--green);
   overflow: hidden;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 20px 0 20px 0;
-  background-color: var(--green);
-  height: auto;
-  margin: 5px 0 80px 0;
-  overflow: hidden;
+.contact-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
 }
-.footer-sect {
+
+.contact-section h2 {
+  color: var(--green);
+  margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.contact-methods {
   display: flex;
-  flex-direction: row;
   flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  overflow: hidden;
+  gap: 0.8rem;
 }
 
-.social-contacts {
-  display: flex;
-  flex: 60%;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  overflow: hidden;
-  align-items: center;
-  height: 200px;
-  margin-bottom: 10px;
+.contact-item img {
+  opacity: 0.7;
 }
 
-.contact-link {
-  overflow: hidden;
-  max-width: 80px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0;
+.contact-item a {
+  color: rgb(6, 60, 129);
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.contact-link img {
-  display: block;
-  width: 100%;
-  max-width: 80px;
-  height: auto;
-  border-radius: 50%;
-  margin-top: 5px;
-  border: 2px solid #ffffff;
-  overflow: hidden;
-  transition: 0.75s;
-}
-.contact-link img:hover {
-  transform: scale(1.2);
-}
-
-.linked {
-  background-color: #0a66c2;
-}
-
-.mail-contact {
-  display: flex;
-  flex: 40%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 200px;
-  margin: 10px;
-}
-
-.mail-contact img {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #ffffff;
-  overflow: hidded;
-}
-.email-address {
-  color: #ffffff;
-  font-size: 1.25rem;
-  margin: 10px 0 10px 0;
-}
-
-.line {
-  height: 2px;
-  width: 200px;
-  background-color: #c6d1c9;
-  margin: 0 10px 0 10px;
-}
-#contact h3 {
-  color: #ffffff;
-  margin-top: 5rem;
+.contact-item a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 420px) {
